@@ -6,5 +6,8 @@
             "email": "lichfolky@gmail.com"
         }
     ],
-    "require": {}
+    "require": {
+        "fakerphp/faker": "^1.23",
+        "nesbot/carbon": "^3.8"
+    }
 }
