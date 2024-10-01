@@ -1,0 +1,10 @@
+{
+    "name": "unifi/advanced-php-2024",
+    "authors": [
+        {
+            "name": "lichfolky",
+            "email": "lichfolky@gmail.com"
+        }
+    ],
+    "require": {}
+}
