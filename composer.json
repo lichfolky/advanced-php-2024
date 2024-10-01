@@ -8,6 +8,7 @@
     ],
     "require": {
         "fakerphp/faker": "^1.23",
-        "nesbot/carbon": "^3.8"
+        "nesbot/carbon": "^3.8",
+        "monolog/monolog": "^3.7"
     }
 }

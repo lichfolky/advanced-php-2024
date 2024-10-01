@@ -26,7 +26,6 @@ echo "<p>" . $dt->isoFormat('LLLL') . "</p>";
 
 
 echo "<h3>Operazioni sulle date</h3>";
-
 $dt->addYears(-2);
 $dt->addDays(2);
 echo "<p>" . $dt->isoFormat('LLLL') . "</p>";
