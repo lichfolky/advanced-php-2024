@@ -39,10 +39,20 @@ final class SingletonManager {
 }
 
 
-$test = SingletonManager::getInstance();
-echo $test->dt->format('Y-m-d H:i:s') . "<br>";
+$manager = SingletonManager::getInstance();
+echo $manager->getCreationDate() . "<br>";
 
+// sleep for 3 seconds
 sleep(5);
-$test2 = SingletonManager::getInstance();
-//$test = SingletonManager::getInstance();
-echo $test2->dt->format('Y-m-d H:i:s') . "<br>";
+
+$manager = SingletonManager::getInstance();
+echo $manager->getCreationDate() . "<br>";
+
+// sleep for 3 seconds
+sleep(5);
+
+$manager = SingletonManager::getInstance();
+echo $manager->getCreationDate() . "<br>";
+
+$now = new DateTime();
+echo $now->format('Y-m-d H:i:s');

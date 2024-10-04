@@ -15,7 +15,12 @@ class User {
     }
 
     public function __toString() {
-        return __CLASS__ . ": " . __METHOD__ . " " . $this->name . " " . $this->lastName;
+        ///return __CLASS__ . ": " . __METHOD__ . " " . $this->name . " " . $this->lastName;
+        return $this->name . " " . $this->lastName;
+    }
+
+    public function update($subject) {
+        echo $this->name . " ho ricevuto un update" . "<br>";
     }
 }
 
