@@ -47,7 +47,19 @@ Piattaforma: https://naboo.training/login/index.php
 - *oop-serializza* - Proviamo la serializzazione di PHP
 - *oop-singleton* - Singleton pattern: un manager con risorsa
 - *oop-model-composer* - Proviamo l'autoloader di composer
-- *oop-rest-api* - Simple OOP rest api
 - *oop-observer* - Observer pattern: feed notifiche corsi (observer e subject)
 
 #### [Slides su Google Docs](https://docs.google.com/presentation/d/11fWIyArpK-po9TIdrVKSQMplO1mIfeGRBx7t5Vw8BWs/edit?usp=sharing)
+
+### 3 OOP-2 
+
+- Iterator (e for each) 
+- Generator
+- Serializable (serializzazione e deserializzazione)  
+- Eccezioni e Error Handling
+- Classi astratte
+- Sessions
+
+#### Esercitazioni:      
+- Error Handling con files  
+- Factory pattern
