@@ -46,8 +46,13 @@ class CourseWithUsers implements CourseInterface {
     // Notify to the observers
     public function notify() {
         $users = $this->getUsers();
+        /*
         for ($i = 0; $i < count($users); $i++) {
             $users[$i]->update($this);
+        }
+        */
+        foreach ($users as $user) {
+            $user->update($this);
         }
     }
 }

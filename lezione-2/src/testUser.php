@@ -7,11 +7,11 @@ use Unifi\Model\{User, Teacher, CourseWithUsers, CourseInterface};
 
 //$test = __DIR__ . '\..\vendor\autoload.php';
 
-$utente = new Teacher(0, "Mattia", "PHP", mail: "mattia.folcarelli@gmail.com");
+$utente = new Teacher(5, "Mattia", "PHP", mail: "mattia.folcarelli@gmail.com");
 //echo $utente::$num . "<br>";
 echo $utente->getName() . "<br>";
 //$utente->name = "Beppe";
-$utente2 = new User(1, "Beppe");
+$utente2 = new User(90, "Beppe");
 echo $utente2->getName() . "<br>";
 
 //echo $utente->name;
