@@ -1,6 +1,6 @@
 <?php
 
-namespace Unifi\Models;
+namespace Unifi\Model;
 
 class Lesson {
     public function __construct(

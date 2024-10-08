@@ -1,5 +1,8 @@
 {
-    "require": {},
+    "require": {
+        "nesbot/carbon": "^3.8",
+        "fakerphp/faker": "^1.23"
+    },
     "autoload": {
         "psr-4": {
             "Unifi\\": "src/"
