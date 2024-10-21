@@ -1,26 +1,27 @@
 <?php
+require_once "User.php";
 class Course {
 
     public function __construct(
-        private $name,
-        private $description,
-        private $teacher
+        private string $name,
+        private string $description,
+        private Teacher $teacher
     ) {
     }
 
-    function getDescription() {
+    function getDescription(): string {
         return $this->description;
     }
 
-    function getName() {
+    function getName(): string {
         return $this->name;
     }
 
-    function getTeacher() {
+    function getTeacher(): Teacher {
         return $this->teacher;
     }
 
-    public function __toString() {
+    public function __toString(): string {
         return $this->name;
     }
 }
