@@ -10,7 +10,8 @@ class User {
     public function __construct(
         public int $id,
         private string $name,
-        private string $lastName
+        private string $lastName,
+        private ?DateTime $birthDay = null
     ) {
     }
 
@@ -20,6 +21,10 @@ class User {
 
     public function getName(): string {
         return $this->name;
+    }
+
+    public function getBirthDay(): ?DateTime {
+        return $this->birthDay;
     }
 
     public function getLastName(): string {

@@ -12,5 +12,5 @@ function printProperties(object $obj): string {
 }
 
 
-$io = new User(1, "Mattia", "Folcarelli");
-$io->privateLog();
+//$io = new User(1, "Mattia", "Folcarelli");
+//$io->privateLog();
