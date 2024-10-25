@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="currentTime">.</div>
+    <form method="post" action="./backend.php">
+        <input type="text" name="username">
+        <input type="password" name="password">
+        <input type="submit">
+    </form>
+    <script>
+        ctElement = document.querySelector(".currentTime");
+        formEl = document.querySelector("form");
+        formEl.addEventListener("submit", (event) => {
+            event.preventDefault();
+            fetch("http://localhost:9000/lezione-5/httpTest/backend.php")
+                .then(response => response.json())
+                .then(data => {
+                    console.log(data);
+                    ctElement.innerText = data.date;
+
+                });;
+        })
+    </script>
+
+</body>
+
+</html>

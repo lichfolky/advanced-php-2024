@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <style>
+        .rosso {
+            color: crimson;
+        }
+    </style>
+    <div id="app">
+        <h2 :class="{ rosso: thunz }">{{ message }}</h2>
+        <p v-for="sub in subs">
+            {{ sub }}
+        </p>
+        <input type="text" v-model="newSub">
+        <button @click="addSub">Add</button>
+        <p>
+            <button @click="scriviTunz" :class="{ rosso: thunz }">thunz</button>
+        </p>
+    </div>
+    <script>const { createApp } = Vue;
+
+        const app = createApp({
+            data() {
+                return {
+                    message: "bella ciao",
+                    subs: ["beppe", "lorenzoilmagnifico"],
+                    thunz: false,
+                    newSub: ""
+                };
+            },
+            methods: {
+                scriviTunz(event) {
+                    this.message += " thunz";
+                    this.thunz = true;
+                    console.log(event);
+                },
+                addSub(event) {
+                    this.subs.push(this.newSub);
+                    this.newSub = "";
+                }
+            }
+        });
+
+        app.mount('#app')</script>
+</body>
+
+</html>
